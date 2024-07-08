@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PocCosmosDb.BlazorServer", "src\PocCosmosDb.BlazorServer\PocCosmosDb.BlazorServer.csproj", "{CAB815E1-F637-4EAA-93D5-788559725843}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+	
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		
+		{8A851382-2370-4B83-9F16-776518C2E301}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A851382-2370-4B83-9F16-776518C2E301}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A851382-2370-4B83-9F16-776518C2E301}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A851382-2370-4B83-9F16-776518C2E301}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8707A9CF-33A4-4A0E-8362-ABEDF2678204}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8707A9CF-33A4-4A0E-8362-ABEDF2678204}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8707A9CF-33A4-4A0E-8362-ABEDF2678204}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8707A9CF-33A4-4A0E-8362-ABEDF2678204}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAB815E1-F637-4EAA-93D5-788559725843}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAB815E1-F637-4EAA-93D5-788559725843}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAB815E1-F637-4EAA-93D5-788559725843}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAB815E1-F637-4EAA-93D5-788559725843}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
