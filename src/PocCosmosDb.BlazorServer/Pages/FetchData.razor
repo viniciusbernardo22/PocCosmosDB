@@ -1,15 +1,14 @@
 ﻿@page "/fetchdata"
 
+
 <PageTitle>Weather forecast</PageTitle>
+@inject IEnginnerService EnginnerService
 
-@using PocCosmosDb.BlazorServer.Data
-@inject WeatherForecastService ForecastService
+<h1>Enginner List</h1>
 
-<h1>Weather forecast</h1>
+<p>This listing is being Fetch by a CosmoDB instance.</p>
 
-<p>This component demonstrates fetching data from a service.</p>
-
-@if (forecasts == null)
+@if (enginners is null)
 {
     <p>
         <em>Loading...</em>
@@ -20,20 +19,22 @@ else
     <table class="table">
         <thead>
         <tr>
-            <th>Date</th>
-            <th>Temp. (C)</th>
-            <th>Temp. (F)</th>
-            <th>Summary</th>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Speciality</th>
+            <th>birthDay</th>
+            <th>admission</th>
         </tr>
         </thead>
         <tbody>
-        @foreach (var forecast in forecasts)
+        @foreach (var eng in enginners)
         {
             <tr>
-                <td>@forecast.Date.ToShortDateString()</td>
-                <td>@forecast.TemperatureC</td>
-                <td>@forecast.TemperatureF</td>
-                <td>@forecast.Summary</td>
+                <td>@eng.id</td>
+                <td>@eng.name</td>
+                <td>@eng.speciality</td>
+                <td>@eng.birthDay.ToString()</td>
+                <td>@eng.admission.ToString(CultureInfo.InvariantCulture)</td>
             </tr>
         }
         </tbody>
@@ -41,11 +42,11 @@ else
 }
 
 @code {
-    private WeatherForecast[]? forecasts;
 
+     List<Engineer> enginners { get; set; }
     protected override async Task OnInitializedAsync()
     {
-        forecasts = await ForecastService.GetForecastAsync(DateTime.Now);
+        enginners = await EnginnerService.GetEnginnersAsync();
     }
 
 }
